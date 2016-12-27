@@ -14,7 +14,7 @@
 
 using namespace std;
 
-namespace CPP {
+namespace CPPPrinter {
     void sayHello();
     
     class CPPPrinter {

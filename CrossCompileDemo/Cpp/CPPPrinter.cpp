@@ -11,7 +11,7 @@
 
 using namespace std;
 
-namespace CPP {
+namespace CPPPrinter {
     void sayHello() {
         printf("%s, %s, %d\n", __FILE__, __func__, __LINE__);
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		829D0D6D1E127C1500D9EE6E /* CPPLogHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 829D0D6B1E127C1500D9EE6E /* CPPLogHelper.cpp */; };
+		829D0D701E12873900D9EE6E /* libLogHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829D0D621E127BEE00D9EE6E /* libLogHelper.a */; };
 		82E1FF5A1E11086A00CCD722 /* CrossCompileDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E1FF581E11086A00CCD722 /* CrossCompileDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E1FF701E110A0F00CCD722 /* DMPrinterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E1FF6E1E110A0F00CCD722 /* DMPrinterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E1FF711E110A0F00CCD722 /* DMPrinterManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82E1FF6F1E110A0F00CCD722 /* DMPrinterManager.mm */; };
@@ -26,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		829D0D6E1E12872900D9EE6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82E1FF4C1E11086A00CCD722 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 829D0D611E127BEE00D9EE6E;
+			remoteInfo = LogHelper;
+		};
 		82E1FF8D1E110D5900CCD722 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 82E1FF4C1E11086A00CCD722 /* Project object */;
@@ -35,7 +44,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		829D0D601E127BEE00D9EE6E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		829D0D621E127BEE00D9EE6E /* libLogHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		829D0D6B1E127C1500D9EE6E /* CPPLogHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPLogHelper.cpp; sourceTree = "<group>"; };
+		829D0D6C1E127C1500D9EE6E /* CPPLogHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPLogHelper.hpp; sourceTree = "<group>"; };
 		82E1FF551E11086A00CCD722 /* CrossCompileDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossCompileDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E1FF581E11086A00CCD722 /* CrossCompileDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossCompileDemo.h; sourceTree = "<group>"; };
 		82E1FF591E11086A00CCD722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,10 +88,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		829D0D5F1E127BEE00D9EE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82E1FF511E11086A00CCD722 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829D0D701E12873900D9EE6E /* libLogHelper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +114,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		829D0D631E127BEE00D9EE6E /* LogHelper */ = {
+			isa = PBXGroup;
+			children = (
+				829D0D6C1E127C1500D9EE6E /* CPPLogHelper.hpp */,
+				829D0D6B1E127C1500D9EE6E /* CPPLogHelper.cpp */,
+			);
+			path = LogHelper;
+			sourceTree = "<group>";
+		};
+		829DDF3C1E12647000D9EE6E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				829DDF3D1E12647000D9EE6E /* include */,
+				829DDF3F1E12647000D9EE6E /* lib */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		829DDF3D1E12647000D9EE6E /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		829DDF3F1E12647000D9EE6E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		82E1FF4B1E11086A00CCD722 = {
 			isa = PBXGroup;
 			children = (
+				829D0D631E127BEE00D9EE6E /* LogHelper */,
 				82E1FF571E11086A00CCD722 /* CrossCompileDemo */,
 				82E1FF771E110D4000CCD722 /* AppDemo */,
-				82E1FF561E11086A00CCD722 /* Products */,
 				82E1FFA41E12001100CCD722 /* Frameworks */,
+				82E1FF561E11086A00CCD722 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +162,7 @@
 			children = (
 				82E1FF551E11086A00CCD722 /* CrossCompileDemo.framework */,
 				82E1FF761E110D4000CCD722 /* AppDemo.app */,
+				829D0D621E127BEE00D9EE6E /* libLogHelper.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +174,7 @@
 				82E1FF6D1E1109D900CCD722 /* OC */,
 				82E1FF611E1108E900CCD722 /* Cpp */,
 				82E1FF6C1E1109D900CCD722 /* C */,
+				829DDF3C1E12647000D9EE6E /* Library */,
 				82E1FF591E11086A00CCD722 /* Info.plist */,
 			);
 			path = CrossCompileDemo;
@@ -194,6 +261,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		829D0D611E127BEE00D9EE6E /* LogHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829D0D681E127BEE00D9EE6E /* Build configuration list for PBXNativeTarget "LogHelper" */;
+			buildPhases = (
+				829D0D5E1E127BEE00D9EE6E /* Sources */,
+				829D0D5F1E127BEE00D9EE6E /* Frameworks */,
+				829D0D601E127BEE00D9EE6E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogHelper;
+			productName = LogHelper;
+			productReference = 829D0D621E127BEE00D9EE6E /* libLogHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		82E1FF541E11086A00CCD722 /* CrossCompileDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82E1FF5D1E11086A00CCD722 /* Build configuration list for PBXNativeTarget "CrossCompileDemo" */;
@@ -206,6 +290,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				829D0D6F1E12872900D9EE6E /* PBXTargetDependency */,
 			);
 			name = CrossCompileDemo;
 			productName = CrossCompileDemo;
@@ -239,6 +324,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = CX;
 				TargetAttributes = {
+					829D0D611E127BEE00D9EE6E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3D6TZW6U4P;
+						ProvisioningStyle = Automatic;
+					};
 					82E1FF541E11086A00CCD722 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3D6TZW6U4P;
@@ -264,6 +354,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				829D0D611E127BEE00D9EE6E /* LogHelper */,
 				82E1FF541E11086A00CCD722 /* CrossCompileDemo */,
 				82E1FF751E110D4000CCD722 /* AppDemo */,
 			);
@@ -291,6 +382,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		829D0D5E1E127BEE00D9EE6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829D0D6D1E127C1500D9EE6E /* CPPLogHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82E1FF501E11086A00CCD722 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +415,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		829D0D6F1E12872900D9EE6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 829D0D611E127BEE00D9EE6E /* LogHelper */;
+			targetProxy = 829D0D6E1E12872900D9EE6E /* PBXContainerItemProxy */;
+		};
 		82E1FF8E1E110D5900CCD722 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 82E1FF541E11086A00CCD722 /* CrossCompileDemo */;
@@ -343,6 +447,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		829D0D691E127BEE00D9EE6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3D6TZW6U4P;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		829D0D6A1E127BEE00D9EE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3D6TZW6U4P;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		82E1FF5B1E11086A00CCD722 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +575,11 @@
 				INFOPLIST_FILE = CrossCompileDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CrossCompileDemo",
+					"$(PROJECT_DIR)/CrossCompileDemo/Library/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samir.CrossCompileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -469,6 +598,11 @@
 				INFOPLIST_FILE = CrossCompileDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CrossCompileDemo",
+					"$(PROJECT_DIR)/CrossCompileDemo/Library/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samir.CrossCompileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -504,6 +638,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		829D0D681E127BEE00D9EE6E /* Build configuration list for PBXNativeTarget "LogHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829D0D691E127BEE00D9EE6E /* Debug */,
+				829D0D6A1E127BEE00D9EE6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		82E1FF4F1E11086A00CCD722 /* Build configuration list for PBXProject "CrossCompileDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

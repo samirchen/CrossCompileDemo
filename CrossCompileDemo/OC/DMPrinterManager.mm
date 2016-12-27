@@ -9,11 +9,13 @@
 #import "DMPrinterManager.h"
 
 #include "CPPPrinter.hpp"
+
 #include "cprinter.h"
 
+#include "CPPLogHelper.hpp"
 
 @interface DMPrinterManager ()
-@property (assign, nonatomic) CPP::CPPPrinter *cppPrinter;
+@property (assign, nonatomic) CPPPrinter::CPPPrinter *cppPrinter;
 @end
 
 @implementation DMPrinterManager
@@ -27,11 +29,14 @@
 #pragma mark - Utility
 - (void)saySomethingUseCppCode {
     // Function in cpp code.
-    CPP::sayHello();
+    CPPPrinter::sayHello();
     
     // Instance method in cpp code.
-    self.cppPrinter = new CPP::CPPPrinter();
+    self.cppPrinter = new CPPPrinter::CPPPrinter();
     self.cppPrinter->sayHello();
+    
+    // Function in library.
+    CPPLogHelper::log();
 }
 
 - (void)saySomethingUseCCode {
