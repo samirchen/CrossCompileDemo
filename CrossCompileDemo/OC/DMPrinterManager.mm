@@ -9,10 +9,9 @@
 #import "DMPrinterManager.h"
 
 #include "CPPPrinter.hpp"
-
 #include "cprinter.h"
-
 #include "CPPLogHelper.hpp"
+#include "CPPMessageHelper.hpp"
 
 @interface DMPrinterManager ()
 @property (assign, nonatomic) CPPPrinter::CPPPrinter *cppPrinter;
@@ -37,6 +36,7 @@
     
     // Function in library.
     CPPLogHelper::log();
+    //CPPMessageHelper::sayHello();
 }
 
 - (void)saySomethingUseCCode {
