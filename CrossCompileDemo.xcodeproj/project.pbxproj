@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8237F7971E12A93800513F4D /* CPPMessageHelper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8237F7961E12A93800513F4D /* CPPMessageHelper.hpp */; };
-		8237F7991E12A99E00513F4D /* libmsg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8237F7981E12A99E00513F4D /* libmsg.a */; };
 		829D0D6D1E127C1500D9EE6E /* CPPLogHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 829D0D6B1E127C1500D9EE6E /* CPPLogHelper.cpp */; };
 		829D0D701E12873900D9EE6E /* libLogHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829D0D621E127BEE00D9EE6E /* libLogHelper.a */; };
 		82E1FF5A1E11086A00CCD722 /* CrossCompileDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E1FF581E11086A00CCD722 /* CrossCompileDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,8 +57,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8237F7961E12A93800513F4D /* CPPMessageHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPMessageHelper.hpp; sourceTree = "<group>"; };
-		8237F7981E12A99E00513F4D /* libmsg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmsg.a; sourceTree = "<group>"; };
 		829D0D621E127BEE00D9EE6E /* libLogHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		829D0D6B1E127C1500D9EE6E /* CPPLogHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPLogHelper.cpp; sourceTree = "<group>"; };
 		829D0D6C1E127C1500D9EE6E /* CPPLogHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPLogHelper.hpp; sourceTree = "<group>"; };
@@ -104,7 +100,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				829D0D701E12873900D9EE6E /* libLogHelper.a in Frameworks */,
-				8237F7991E12A99E00513F4D /* libmsg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +135,6 @@
 		829DDF3D1E12647000D9EE6E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				8237F7961E12A93800513F4D /* CPPMessageHelper.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -148,7 +142,6 @@
 		829DDF3F1E12647000D9EE6E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				8237F7981E12A99E00513F4D /* libmsg.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -262,7 +255,6 @@
 				82E1FF701E110A0F00CCD722 /* DMPrinterManager.h in Headers */,
 				82E1FF5A1E11086A00CCD722 /* CrossCompileDemo.h in Headers */,
 				82E1FF9F1E1119BC00CCD722 /* cprinter.h in Headers */,
-				8237F7971E12A93800513F4D /* CPPMessageHelper.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
